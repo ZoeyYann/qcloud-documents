@@ -17,7 +17,7 @@
 
 ### 任务提交
 
-准备一个 TFJob 的 [yaml 文件](https://raw.githubusercontent.com/kubeflow/tf-operator/master/examples/v1/dist-mnist/tf_job_mnist.yaml)：定义 2 个 PS 和 4 个 Worker。
+1. 准备一个 TFJob 的 [yaml 文件](https://raw.githubusercontent.com/kubeflow/tf-operator/master/examples/v1/dist-mnist/tf_job_mnist.yaml)：定义 2 个 PS 和 4 个 Worker。
 >? 请注意，用户需要用上传后的训练镜像地址替换 <训练镜像> 所在占位。
 
 ```yaml
@@ -45,14 +45,15 @@ spec:
               image: <训练镜像>
 ```
 
-通过 `kubectl` 提交该 TFJob：
+2. 通过 `kubectl` 提交该 TFJob：
 
 ```shell
 kubectl create -f ./tf_job_mnist.yaml
 ```
 
-查看任务状态
+3. 查看任务状态
 ```shell
 kubectl get tfjob dist-mnist-for-e2e-test -o yaml
+kubectl get pods -l pytorch_job_name=pytorch-tcp-dist-mnist 
 ```
 

@@ -4,7 +4,8 @@
 
 在部署完成之后，用户可以创建、查看、删除 [TFJob](https://www.kubeflow.org/docs/components/training/tftraining/)。
 
-*当前版本的 TF-Operator 依赖 Kubernetes 1.16+*
+### 前置依赖
+-  Kubernetes 集群（version >= 1.16）
 
 ## 部署
 

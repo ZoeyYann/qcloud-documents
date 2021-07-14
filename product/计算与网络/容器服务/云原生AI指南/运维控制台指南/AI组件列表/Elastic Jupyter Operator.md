@@ -22,7 +22,7 @@
 
 ## 使用
 
-具体可参见[使用文档](https://github.com/tkestack/elastic-jupyter-operator/blob/master/README.md)
+更多详细说明，可参见[使用文档](https://github.com/tkestack/elastic-jupyter-operator/blob/master/README.md)。
 
 首先，创建一个 Jupyter Gateway CR：
 

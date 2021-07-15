@@ -4,7 +4,8 @@
 
 在部署完成之后，用户可以创建、查看、删除 [PyTorchJob](https://www.kubeflow.org/docs/reference/pytorchjob/v1/pytorch/)。
 
-*当前版本的 PyTorch-Operator 依赖 Kubernetes 1.16+*
+### 前置依赖
+-  Kubernetes 集群（version >= 1.16）
 
 ## 部署
 
@@ -20,4 +21,5 @@
 | `namespace.name`   | 部署 PyTorch-Operator 的命名空间 | `"pytorch-operator"` |
 
 ## 最佳实践
+请参考[运行Pytorch训练任务]()。
 
